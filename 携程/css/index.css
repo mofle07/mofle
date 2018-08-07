@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 12px/100% "Microsoft YaHei";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+img {
+  display: block;
+  border: none;
+}
+
+.container {
+  position: relative;
+}
+.container .header {
+  position: fixed;
+  width: 100%;
+  height: 0.9661835749rem;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #ccc;
+  padding: 0.1207729469rem 0.2415458937rem;
+  display: flex;
+}
+.container .header .searchbar {
+  height: 0.7246376812rem;
+  border-radius: 0.1207729469rem;
+  padding-left: 0.7246376812rem;
+  border: 1px solid #666;
+  flex: 1;
+  background: url("../imgs/glass.png") no-repeat;
+  background-size: 0.4830917874rem auto;
+  background-position: 0.1207729469rem center;
+  background-color: #fff;
+}
+.container .header span {
+  flex-basis: 1.2077294686rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .header span img {
+  width: 0.4830917874rem;
+}
+.container .main {
+  background-color: #dddddd;
+  padding: 0rem 0.1207729469rem;
+}
+.container .main .banner {
+  padding-top: 0.9661835749rem;
+  margin: 0rem -0.1207729469rem;
+}
+.container .main .banner .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+.container .main .banner .swiper-pagination {
+  text-align: right;
+}
+.container .main .banner .swiper-pagination .swiper-pagination-bullet-active {
+  width: 0.3623188406rem;
+  border-radius: 0.2415458937rem;
+}
+.container .main .navbar {
+  padding: 0.2415458937rem 0rem;
+  display: flex;
+  margin-top: 0.1207729469rem;
+  border-radius: 0.2415458937rem;
+  background-color: #fff;
+}
+.container .main .navbar a {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+.container .main .navbar a img {
+  width: 1.5458937198rem;
+}
+.container .main .navbar a span {
+  margin-top: 0.1207729469rem;
+}
+.container .main .center {
+  margin-top: 0.1207729469rem;
+}
+.container .main .center .section {
+  display: flex;
+  height: 1.9323671498rem;
+  margin-bottom: 0.1207729469rem;
+}
+.container .main .center .section .left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.4830917874rem;
+  border-right: 1px solid #fff;
+}
+.container .main .center .section .left a {
+  color: white;
+}
+.container .main .center .section .right {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .main .center .section .right a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  color: white;
+}
+.container .main .center .section .right a:nth-child(1), .container .main .center .section .right a:nth-child(3) {
+  border-right: 1px solid #fff;
+}
+.container .main .center .section .right a:nth-child(1), .container .main .center .section .right a:nth-child(2) {
+  border-bottom: 1px solid #fff;
+}
+.container .main .center .section1 {
+  border-top-left-radius: 0.2415458937rem;
+  border-top-right-radius: 0.2415458937rem;
+  background: linear-gradient(to right, #fa5c55, #fa9a4e);
+}
+.container .main .center .section1 .left {
+  background: url("../imgs/item1.png") center bottom/2.1739130435rem auto no-repeat;
+}
+.container .main .center .section2 {
+  background: linear-gradient(to right, #4b91ed, #53b9ed);
+}
+.container .main .center .section2 .left {
+  background: url("../imgs/item2.png") center bottom/2.1739130435rem auto no-repeat;
+}
+.container .main .center .section3 {
+  border-bottom-left-radius: 0.2415458937rem;
+  border-bottom-right-radius: 0.2415458937rem;
+  background: linear-gradient(to right, #34c2a7, #6ad35b);
+}
+.container .main .center .section3 .left {
+  background: url("../imgs/item3.png") center bottom/2.1739130435rem auto no-repeat;
+}
+.container .main .subnav {
+  display: flex;
+  flex-wrap: wrap;
+  height: 2.0531400966rem;
+  border-radius: 0.2415458937rem;
+  background-color: #fff;
+}
+.container .main .subnav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 16.666666%;
+}
+.container .main .subnav a img {
+  width: 0.5797101449rem;
+}
+
+.searchpage {
+  position: relative;
+  display: none;
+}
+.searchpage .header {
+  position: fixed;
+  width: 100%;
+  height: 0.9661835749rem;
+  background-color: #e6f0f7;
+  border-bottom: 1px solid #ccc;
+  padding: 0.1207729469rem 0.2415458937rem;
+  display: flex;
+}
+.searchpage .header img {
+  width: 0.7246376812rem;
+  margin-right: 0.1207729469rem;
+}
+.searchpage .header .searchbar {
+  height: 0.7246376812rem;
+  border-radius: 0.1207729469rem;
+  border: 1px solid #666;
+  padding-left: 0.6038647343rem;
+  flex: 1;
+  background: url("../imgs/glass.png") no-repeat;
+  background-size: 0.4830917874rem, auto;
+  background-position: 0.1207729469rem center;
+  background-color: #fff;
+}
+.searchpage .header a {
+  flex-basis: 1.2077294686rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #727272;
+  font-size: 0.4347826087rem;
+}
+.searchpage .searchinfo {
+  padding-top: 0.9661835749rem;
+  display: none;
+}
+.searchpage .searchinfo p {
+  height: 0.845410628rem;
+  line-height: 0.845410628rem;
+  font-size: 0.38647343rem;
+  padding-left: 0.2415458937rem;
+  background-color: #f6f6f6;
+  color: #929292;
+}
+.searchpage .searchinfo .searchList li {
+  height: 1.2077294686rem;
+  line-height: 1.2077294686rem;
+  border-top: 1px solid #999;
+  padding-left: 0.6038647343rem;
+  font-size: 0.38647343rem;
+}
+.searchpage .searchinfo .searchList .clear {
+  text-align: center;
+  color: #4b91ed;
+}
+
+/*# sourceMappingURL=index.css.map */

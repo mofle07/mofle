@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./lib/jquery-1.8.3.min.js"></script>
+    <script src="./lib/dist/js/swiper.min.js"></script>
+    <script src="./lib/index.js"></script>
+    <!-- 导入swiper插件js -->
+
+    <link rel="stylesheet" href="./lib/dist/css/swiper.min.css">
+
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 搜索条 -->
+        <div class="header">
+            <input class="searchbar" type="text" placeholder="酒店/目的地/景点/航班">
+            <span>
+                <img src="./imgs/icon.png" alt="">
+                <a href="">个人</a>
+            </span>
+        </div>
+        <!-- 主体部分 -->
+        <div class="main">
+            <!-- banner轮播图 -->
+            <div class="banner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="./imgs/banner01.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="./imgs/banner02.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="./imgs/banner03.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="./imgs/banner04.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- 导航条 -->
+            <div class="navbar">
+                <a href="">
+                    <img src="./imgs/nav1.png" alt="">
+                    <span>一日游</span>
+                </a>
+                <a href="">
+                    <img src="./imgs/nav2.png" alt="">
+                    <span>一日游</span>
+                </a>
+                <a href="">
+                    <img src="./imgs/nav3.png" alt="">
+                    <span>一日游</span>
+                </a>
+                <a href="">
+                    <img src="./imgs/nav4.png" alt="">
+                    <span>一日游</span>
+                </a>
+                <a href="">
+                    <img src="./imgs/nav5.png" alt="">
+                    <span>一日游</span>
+                </a>
+            </div>
+            <!-- 主体介绍部分 -->
+            <div class="center">
+                <div class="section section1">
+                    <div class="left">
+                        <a href="">机票</a>
+                    </div>
+                    <div class="right">
+                        <a href="">住酒店</a>
+                        <a href="">住酒店</a>
+                        <a href="">住酒店</a>
+                        <a href="">住酒店</a>
+                    </div>
+                </div>
+                <div class="section section2">
+                    <div class="left">
+                        <a href="">机票</a>
+                    </div>
+                    <div class="right">
+                        <a href="">住酒店</a>
+                        <a href="">住酒店</a>
+                        <a href="">住酒店</a>
+                        <a href="">住酒店</a>
+                    </div>
+                </div>
+                <div class="section section3">
+                    <div class="left">
+                        <a href="">机票</a>
+                    </div>
+                    <div class="right">
+                        <a href="">住酒店</a>
+                        <a href="">住酒店</a>
+                        <a href="">住酒店</a>
+                        <a href="">住酒店</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 底部 -->
+            <div class="subnav">
+                <a href="">
+                    <img src="./imgs/subnav1.png" alt="">
+                    <span>签证</span>
+                </a>
+                <a href="">
+                    <img src="./imgs/subnav2.png" alt="">
+                    <span>签证</span>
+                </a>
+                <a href="">
+                    <img src="./imgs/subnav3.png" alt="">
+                    <span>签证</span>
+                </a>
+                <a href="">
+                    <img src="./imgs/subnav4.png" alt="">
+                    <span>签证</span>
+                </a>
+                <a href="">
+                    <img src="./imgs/subnav5.png" alt="">
+                    <span>签证</span>
+                </a>
+                <a href="">
+                    <img src="./imgs/subnav6.png" alt="">
+                    <span>签证</span>
+                </a>
+                <a href="">
+                    <img src="./imgs/subnav7.png" alt="">
+                    <span>签证</span>
+                </a>
+                <a href="">
+                    <img src="./imgs/subnav8.png" alt="">
+                    <span>签证</span>
+                </a>
+                <a href="">
+                    <img src="./imgs/subnav9.png" alt="">
+                    <span>签证</span>
+                </a>
+                <a href="">
+                    <img src="./imgs/subnav10.png" alt="">
+                    <span>签证</span>
+                </a>
+                <a href="">
+                    <img src="./imgs/subnav11.png" alt="">
+                    <span>签证</span>
+                </a>
+                <a href="">
+                    <img src="./imgs/subnav12.png" alt="">
+                    <span>签证</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 搜索页 -->
+    <div class="searchpage">
+        <div class="header">
+            <img class="back" src="./imgs/back.png" alt="">
+            <input class="searchbar" type="text">
+            <a href="#" class="search">搜索</a>
+        </div>
+        <div class="searchinfo">
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    document.querySelector("html").style.fontSize = window.screen.width / 10 + "px";
+
+    if (window.screen.width >= 500) {
+        document.querySelector("html").style.fontSize = 50 + "px";
+    }
+</script>
+<script src="./lib/template-web.js"></script>
+<script type="text/html" id="tpl">
+    <!--<p>搜索历史</p> -->
+    <ul class="searchList">
+        {{each list v i}}
+        <li>{{v}}</li>
+        {{/each}}
+        <li class="clear">清空搜索历史</li>
+        
+    </ul>
+</script>
